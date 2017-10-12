@@ -24,7 +24,8 @@ public class Practice10HistogramView extends View {
     private int mCoordinateWidth = 600;
     private int mCoordinateHeight = 500;
 
-
+    private int columnSpace = 20;
+    private int columnWidth = 40;
 
     private Path mPath;
 
@@ -48,7 +49,11 @@ public class Practice10HistogramView extends View {
     }
 
     private void init() {
+
         mHistoryPaint = new Paint();
+        mHistoryPaint.setColor(Color.BLUE);
+        mHistoryPaint.setStyle(Paint.Style.FILL);
+
         mTextPaint = new Paint();
 
         mCoordinatePaint = new Paint();
@@ -83,8 +88,14 @@ public class Practice10HistogramView extends View {
 
     }
 
+    private int mLeft;
+    private int mRight;
 
     private void drawHistogram(Canvas canvas) {
+
+        for(int i=0;i<mHistogramNames.size();i++) {
+            canvas.drawRect();
+        }
 
     }
 
